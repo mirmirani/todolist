@@ -1,0 +1,14 @@
+/*CSS sheet*/
+
+#instructions {
+    text-align: center;
+    padding: 0%;
+}
+
+.done {
+text-decoration: line-through;
+}
+
+.del {
+    display: none;
+}
