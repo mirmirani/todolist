@@ -1,61 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>To Do List</title>
+<head> 
+<title> Organiser </title>
 <meta charset="UTF-8">
-<meta http-equiv=”refresh” content='5'>
+<meta http-equiv=”refresh” content="10">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://kit.fontawesome.com/b5035ca9ea.js"></script>
+<link rel="stylesheet" href="style.css">
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: Georgia, 'Times New Roman', Times, serif}
+html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Georgia', 'Times New Roman', Times, serif,}
 </style>
 </head>
-<!-- end of Meta -->
+<!-- End of Meta -->
 <body>
-<!--header-->
-<header class='w3-sand w3-padding-16' style="text-align: center; margin: 0; max-width: 1600px;">
-<div>
-<h1 class="w3-text-pink w3-opacity">To Do List</h1>
+<header class="header w3-padding-16 w3-sand">
+<div class="header">
+    <h1 class="w3-text-pink" style="text-align: center;"> To Do List </h1>
 </div>
 </header>
-<!--End of header-->
-
-<!-- instructions-->
-<div style="margin-left: auto; margin-right: auto; width: 60%;">
-<p id='instructions' > Enter your task below</p>
-<p id='instructions' >Click "x" to remove task</p>
-<P id='instructions' >Click the item to mark as comlplete </P>
-<hr>
+<!-- End of header -->
+<div class="container" style="max-width: 1600px;">
+<!-- Start of container -->
+<div style="max-width: 500px; margin-left: auto; margin-right: auto;">
+  <input id="inputBar" type="text" style="width: 90%; align: middle; margin-left: auto; margin-right: auto;" placeholder="Write here...">
+  <button id="addItem" type="button" class=" w3-sand"><i class="fa fa-pencil fa-fw w3-text-pink"></i></button>
 </div>
-<!-- end of instructions-->
-
-<!-- input row-->
-<div style="margin-left: auto; margin-right: auto; width: 60%;">
-<input id="userInput" type="text" placeholder="Add note">
-<button id='enter' type="button"><i class="fas fa-pen fa-fw w3-text-black"></i></button>
-<hr>
+<!-- End of input -->
+<div class="container" style="max-width: 500px; margin-left: auto; margin-right: auto;">
+<ul id="List"></ul>
 </div>
-
-<!-- Empty list-->
-<div style="margin-left: auto; margin-right: auto; width: 60%;">
-<ul class='tasks' id='tasks'></ul>
-<ul class='tasks' id='completed'></ul>
-<hr>
+<!-- End of List -->
 </div>
-<!-- End of list-->
-
-<footer>
-    <div>
-
-    </div>
-</footer>
-
-<script type="text/javascript" src="script.js"></script>
+<!-- End of Container -->
+<script src="script.js"></script>
 </body>
-</html>
 
-<!-- guide:https://codepen.io/JohnPaulFich/pen/MXmzzM -->
+  

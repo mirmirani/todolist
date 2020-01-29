@@ -1,14 +1,10 @@
 /*CSS sheet*/
 
-#instructions {
-    text-align: center;
-    padding: 0%;
+.header {
+    margin-bottom: 17px;
+    padding: 0;
 }
 
-.done {
-text-decoration: line-through;
-}
+#addItem {
 
-.del {
-    display: none;
 }
